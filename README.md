@@ -15,12 +15,12 @@ A ROS2 package for real-time detection and 3D localization of humans and objects
 ## System Architecture
 
 ```
-┌─────────────────┐     ┌──────────────────────────┐     ┌─────────────────┐
-│  RealSense D435 │────▶│  Detection Node          │────▶│  /object_position
-│  (RGB + Depth)  │     │  - GroundingDINO         │     │  /human_position
-└─────────────────┘     │  - Depth Fusion          │     │  /detection_markers
-                        │  - 3D Localization       │     │  /detection_image
-                        └──────────────────────────┘     └─────────────────┘
+┌─────────────────┐     ┌──────────────────────────┐     ┌───────────────────┐
+│  RealSense D435 │────▶│  Detection Node          │────▶│/object_position   |
+│  (RGB + Depth)  │     │  - GroundingDINO         │     │/human_position    |
+└─────────────────┘     │  - Depth Fusion          │     │/detection_markers |
+                        │  - 3D Localization       │     │/detection_image   |
+                        └──────────────────────────┘     └───────────────────┘
 ```
 
 ## Requirements
