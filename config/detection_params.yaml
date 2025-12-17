@@ -1,0 +1,15 @@
+# Detection and Distance Node Configuration
+# These are the default parameters that can be overridden via launch file
+
+detection_and_distance_node:
+  ros__parameters:
+    # Detection prompts
+    object_prompt: "Grey LiPo battery"
+    human_prompt: "human"
+    
+    # Grounding DINO thresholds
+    box_threshold: 0.30
+    text_threshold: 0.20
+    
+    # Frame configuration
+    drone_frame: "drone"
